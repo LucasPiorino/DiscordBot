@@ -7,11 +7,8 @@ import discord
 from discord.ext import commands
 import yt_dlp as youtube_dl
 
-# Se você usar voz no Discord, instale PyNaCl (pip install PyNaCl) e inclua:
-# import nacl
-
 # --------------- Variáveis e Fila ---------------
-music_queue = deque()  # Cada item: {"title": ..., "url": ..., "duration": ...}
+music_queue = deque()  
 loop_single = False
 PLAYING_SOURCES = {}
 CURRENT_TRACK = {}
